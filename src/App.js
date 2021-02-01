@@ -2,9 +2,9 @@ import React from 'react';
 import Header from './components/header';
 import {Route, BrowserRouter as Router} from 'react-router-dom';
 import Home from './components/home';
-import AboutMe from './components/aboutme';
+import About from './components/about';
 import Projects from './components/projects';
-import ContactMe from './components/contactme';
+import Contact from './components/contact';
 
 class App extends React.Component {
   render(){
@@ -13,9 +13,9 @@ class App extends React.Component {
     <Router>
       <Header/>
       <Route exact path='/' component={Home}/>
-      <Route exact path='/AboutMe' component={AboutMe}/>
-      <Route exact path='/Projects' component={Projects}/>
-      <Route exact path='/ContactMe' component={ContactMe}/>
+      <Route exact path='/about' component={About}/>
+      <Route exact path='/projects' component={Projects}/>
+      <Route exact path='/contact' component={Contact}/>
     </Router>
     </>
   );}

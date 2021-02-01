@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ContactMe extends React.Component {
+class Contact extends React.Component {
   render(){
   return (
     <>
@@ -9,4 +9,4 @@ class ContactMe extends React.Component {
   );}
 }
 
-export default ContactMe;
+export default Contact;
