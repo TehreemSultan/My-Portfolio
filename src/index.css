@@ -2,22 +2,71 @@
   margin: 0px;
   padding:0px;
 }
-
-
+body{
+  background-color: rgb(42, 54, 54);
+}
 .navbar{
-  background-color:rgb(54, 52, 52);
+  background-color:transparent;
   height:80px;
   display:flex;
   justify-content:start;
   align-items: center;
 }
 .menu-bars{
-  margin-left:2rem;
+  transition: 0.7s ease-in-out;
+  margin-left:4rem;
+  margin-top: 3rem;
   font-size: 2rem;
   background: none;
+  z-index: 10;
 }
+.menu-bars span{
+  background-color: white;
+  height:4px;
+  margin:6px;
+  display: block;
+  position: relative;
+  left:0px;
+  top:0px;
+  transition:0.7s ease-in-out;
+}
+.menu-bars span:nth-child(1){
+  width:50px;
+}
+.menu-bars span:nth-child(2){
+  width:30px;
+}
+.menu-bars span:nth-child(3){
+  width:15px;
+}
+.menu-bars span:nth-child(4){
+  width:75px;
+}
+.menu-bars.cross{
+  margin-left:11rem;
+  
+}
+  .menu-bars.cross span:nth-child(1){
+    
+    top:30px;
+    width:50px;
+    transform: rotate(45deg);
+  }
+  .menu-bars.cross span:nth-child(2),.menu-bars.cross span:nth-child(3){
+    
+    background-color: transparent;
+  }
+  .menu-bars.cross span:nth-child(4){
+    
+    margin-bottom: 30px;
+    width:50px;
+    transform: rotate(-45deg);
+
+  }
+
 .nav-menu{
-  background-color: rgb(36, 34, 34);
+  z-index: 5;
+  background-color: rgb(34, 47, 104);
   width: 250px;
   height:100vh;
   display: flex;
@@ -25,51 +74,41 @@
   position: fixed;
   top:0;
   left:-100%;
-  transition: 850ms;
+  transition: 0.7s ease-in-out;
 }
 
 .nav-menu.active{
   left:0;
-  transition: 350ms;
 }
 .nav-text{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 8px 0px 8px 16px;
+ 
   list-style: none;
   height:60px;
- 
 }
 
 .nav-text a{
  text-decoration: none;
  color:honeydew;
- font-size: 18px;
+ font-size: 20px;
  height:100%;
- width:95%;
  display: flex;
- align-items:center;
+ margin:0px 20%;
  padding:0 16px;
  border-radius: 4px;
+ 
 }
-
-.nav-text a:hover{
-  background-color: indigo;
+.icon-anim{
+  margin-left: 25%;
+}
+.icon-anim span{
+  display: none;
 }
 
 .nav-menu-items{
+  padding-top: 50%;
   width: 100%;
-}
-.navbar-toggle{
-  background-color: rgb(28, 25, 31);
-  width:100%;
-  height:80px;
-  display:flex;
-  justify-content: start;
-  align-items: center;
 }
 
 span{
-  margin-left: 16px;
+  margin-left: 20px;
 }
