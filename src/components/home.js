@@ -1,4 +1,5 @@
 import React from 'react';
+import '.././home.css'
 
 class Home extends React.Component {
   render(){
@@ -6,6 +7,12 @@ class Home extends React.Component {
     <>
     <div className="home">
       <div className="homeBackground">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
       <div></div>
       <div></div>
       <div></div>

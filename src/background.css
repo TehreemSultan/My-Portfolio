@@ -1,0 +1,90 @@
+.background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right:0px;
+    top:0px; 
+}
+.background div{
+    position:relative;
+    width:0px;
+    height:0px;
+    border-left: 35px solid transparent;
+      border-right: 20px solid transparent;
+    border-bottom: 60px solid rgb(196, 4, 93);
+}
+.background div:nth-child(1){
+    top:100px;
+    left:50px;
+    transform: rotate(135deg) scale(0.5);
+    opacity:0.4;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+}
+.background div:nth-child(2){
+    top:300;
+    left:200px;
+    transform: rotate(5deg) scale(0.4);
+    opacity:0.2;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+}
+.background div:nth-child(3){
+    top:200px;
+    left:200px;
+    transform: rotate(35deg) scale(0.2);
+    opacity:0.5;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+}
+.background div:nth-child(4){
+    top:170px;
+    left:500px;
+    transform: rotate(120deg) scale(1);
+    opacity:0.2;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+  }
+  .background div:nth-child(5){
+    top:-80px;
+    left:600px;
+    transform: rotate(120deg) scale(0.6);
+    opacity:0.5;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+  }
+  .background div:nth-child(6){
+    top:200px;
+    left:700px;
+    transform: rotate(0deg) scale(0.3);
+    opacity:0.3;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+  }
+  .background div:nth-child(7){
+    top:180px;
+    left:20px;
+    transform: rotate(5deg) scale(0.8);
+    opacity:0.3;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+  }
+  .background div:nth-child(8){
+    top:80px;
+    left:1100px;
+    transform: rotate(-45deg) scale(1);
+    opacity:0.2;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+  }
+  .background div:nth-child(9){
+    top:-400px;
+    left:1100px;
+    transform: rotate(-45deg) scale(0.5);
+    opacity:0.2;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+  }
+  .background div:nth-child(10){
+    top:-400px;
+    left:950px;
+    transform: rotate(-45deg) scale(0.5);
+    opacity:0.5;
+    filter:drop-shadow(0px 0px 1px rgba(255, 28, 134, 0.993));
+  }
+  .background div:hover{
+    border-bottom-color: rgb(190, 5, 51);
+    transition: 1s;
+    transform-origin: 50% 55%;
+    }

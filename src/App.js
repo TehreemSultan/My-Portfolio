@@ -5,7 +5,9 @@ import Home from './components/home';
 import About from './components/about';
 import Projects from './components/projects';
 import Contact from './components/contact';
+import Background from './components/background'
 import Skills from './components/skills';
+
 
 class App extends React.Component {
   render(){
@@ -13,6 +15,7 @@ class App extends React.Component {
     <>
     <Router>
       <Header/>
+      <Background/>
       <Route exact path='/' component={Home}/>
       <Route exact path='/about' component={About}/>
       <Route exact path='/skills' component={Skills}/>
