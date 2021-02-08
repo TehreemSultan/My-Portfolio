@@ -13,6 +13,7 @@ function Background(){
       <div></div>
       <div></div>
       <div></div>
+      <span></span>
     </div>);
 }
 

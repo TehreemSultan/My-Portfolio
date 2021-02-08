@@ -5,6 +5,7 @@
 body{
   background-color: rgb(42, 54, 54);
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 html{
   overflow: hidden;
@@ -15,7 +16,7 @@ html{
   background-color:transparent;
   height:80px;
   display:flex;
-  justify-content:start;
+  justify-content:flex-start;
   align-items: center;
 }
 .menu-bars{

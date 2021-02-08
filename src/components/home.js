@@ -1,8 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '.././home.css'
 
-class Home extends React.Component {
-  render(){
+function Home() {
+ 
+   
   return (
     <>
     <div className="home">
@@ -20,10 +22,20 @@ class Home extends React.Component {
       <div></div>
       <div></div>
       </div>
+      
+      
+      <div className="textContainer">
+          <h1><span>HI,<br/>
+          I'M TEHREEM SULTAN,<br/>
+          WEB DEVELOPER</span><br/>
+          <Link to='/projects'><button>See my work</button></Link>
+          <Link to='/contacts'><button>Contact me</button></Link>
+         </h1>
+      </div>
     </div>
 
     </>
   );}
-}
+
 
 export default Home;
