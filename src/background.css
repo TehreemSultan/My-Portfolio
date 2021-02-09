@@ -89,62 +89,31 @@
     transition: 1s;
     transform-origin: 50% 55%;
     }
-  .background span{
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:4px;
-    height:4px;
-    border-radius: 50%;
-    box-shadow: 50px 100px 4px rgb(247, 208, 196),
-    200px 10px 4px rgb(247, 208, 196),
-    90px 300px 4px rgb(247, 208, 196),
-    500px 200px 4px rgb(247, 208, 196),
-    10px 350px 4px rgb(247, 208, 196),
-    50px 700px 4px rgb(247, 208, 196),
-    250px 600px 4px rgb(247, 208, 196),
-    130px 460px 4px rgb(247, 208, 196),
-    650px 360px 4px rgb(247, 208, 196),
-    330px 310px 4px rgb(247, 208, 196),
-    700px 103px 4px rgb(247, 208, 196),
-    900px 350px 4px rgb(247, 208, 196),
-    60px 1000px 4px rgb(247, 208, 196),
-    550px 300px 4px rgb(247, 208, 196),
-    460px 500px 4px rgb(247, 208, 196),
-    900px 600px 4px rgb(247, 208, 196),
-    1130px 60px 4px rgb(247, 208, 196),
-    540px 320px 4px rgb(247, 208, 196),
-    1000px 100px 4px rgb(168, 49, 13),
-    760px 200px 4px rgb(247, 208, 196),
-    400px 400px 4px rgb(247, 208, 196),
-    1030px 30px 4px rgb(247, 208, 196),
-    640px 390px 4px rgb(247, 208, 196),
-    800px 200px 4px rgb(168, 49, 13),
-    300px 100px 4px rgb(168, 49, 13),
-    20px 200px 4px rgb(247, 208, 196),
-    2700px 300px 4px rgb(247, 208, 196),
-    430px 50px 4px rgb(247, 208, 196),
-    390px 190px 4px rgb(247, 208, 196),
-    1050px 230px 4px rgb(168, 49, 13),
-    800px 560px 4px rgb(247, 208, 196),
-    1090px 90px 4px rgb(247, 208, 196),
-    750px 200px 4px rgb(168, 49, 13);
-    background-color: rgb(255, 180, 145),;
-    z-index: -10;
-    animation-name: ;
-    animation-duration: 6s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-
-   
-}
-@keyframes remove{
-0%{display: none;}
-100%{display: inline;}
-}
-@keyframes moving{
-  0%{transform: translateY(0px); display: inline;}
-  99%{transform: translateY(200px); display: none;}
-  100%{transform: translateY(20px);}
- 
-  }
+ .background #snowContainer{
+   position: absolute;
+   top:0px;
+   left: 0px;
+   width:100vw;
+   height: 100vh;
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
+   z-index: -20;
+ }
+ #snowContainer .snowflake{
+   display: inline-block;
+   background-color:rgba(255, 255, 255, 0.514);
+   opacity: 0;
+   font-size: 120px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 6px rgb(255, 196, 223);
+   animation: fall 30s linear infinite;
+   user-select: none;
+   margin: 50px;
+ }
+ @keyframes fall{
+   0%{opacity: 0;}
+   3%{opacity: 1;}
+   90%{opacity: 1;}
+   100%{opacity: 0; transform: translate(0,95vh);}
+ }
