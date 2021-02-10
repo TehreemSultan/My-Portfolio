@@ -113,3 +113,24 @@ html{
 span{
   margin-left: 20px;
 }
+
+/*loading page */
+.loadingPage{
+  width:100vw;
+  height:100vh;
+  position: absolute;
+  left:0px;
+  top:0px;
+  background-color: rgb(14, 13, 13);
+  z-index: 20;
+}
+
+.loadingPage .loadingContainer{
+  position:absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+.loadingPage .loadingContainer h3{
+  color:white;
+}

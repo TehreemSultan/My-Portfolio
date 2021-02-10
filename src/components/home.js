@@ -1,12 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import '.././home.css'
+import ShowLoading from './showLoading'
 
 function Home() {
  
    
   return (
     <>
+    <ShowLoading/>
     <div className="home">
       <div className="homeBackground">
       <div></div>

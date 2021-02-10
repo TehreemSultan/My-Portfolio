@@ -1,14 +1,18 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import {SidebarData} from './sidebarData';
+import ShowLoading from './showLoading'
 
 function Header(){
  const [sidebar,setSidebar] = useState(false);
  const showSidebar = () => setSidebar(!sidebar);
+ 
+ 
   return(
     <header>
+      
        <div className='navbar'>
           <Link to="#" className={sidebar ? 'menu-bars cross' : 'menu-bars'}onClick={showSidebar}><span></span><span></span><span></span><span></span></Link>
         </div> 
